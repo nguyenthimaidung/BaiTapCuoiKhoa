@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "cy-open": "cypress open",
+    "cy-run": "cypress run"
+  },
+  "dependencies": {
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.9.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-plugin-tab": "^1.0.5",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.3",
+    "@cypress/xpath": "^2.0.3",
+    "typescript": "^5.0.4"
+  }
+}

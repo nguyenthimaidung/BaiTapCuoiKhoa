@@ -1,0 +1,80 @@
+{
+    "filter": {
+        "op": "and",
+        "children": [
+            {
+                "op": "or",
+                "children": [
+                    {
+                        "field": "year_low",
+                        "eq": [
+                            2009,
+                            2019
+                        ]
+                    },
+                    {
+                        "field": "year_high",
+                        "eq": [
+                            2020,
+                            2025
+                        ]
+                    }
+                ]
+            },
+            
+            {
+                        "field": "fuel_type",
+                        "eq": ["petrol"]
+            }, 
+              {
+                        "field": "powertrain",
+                        "eq": ["bev"]
+            }, 
+             
+            {
+                "op": "and",
+                "children": [
+                    {
+                        "op": "and",
+                        "children": [
+                            
+                            {
+                                "field": "vehicle_model",
+                                "eq": [
+                                    "a6",
+                                    "a3"
+                                ]
+                            },
+                            {
+                                "field": "vehicle_make",
+                                "eq": [
+                                    "audi"
+                                ]
+                            }
+                        ]
+                        
+                    },
+                    {
+                                "field": "vehicle_trim",
+                                "eq": [
+                                    "s line"
+                                ]
+                    }
+                ]
+            }
+        ]
+    },
+    "includeTotalCount": true,
+    "count": 10,
+    "skip": 0,
+    "orderBy": [
+        {
+            "field": "group_year_high",
+            "direction": "desc"
+        },
+        {
+            "field": "group_year_low",
+            "direction": "desc"
+        }
+    ]
+}

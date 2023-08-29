@@ -1,0 +1,59 @@
+{
+  "username": "Maidung",
+  "password": "wy2gQD^2G43NQw5",
+  "Benthu3": "Bên thứ 3",
+  "Datasearch": "Công cụ bên thứ 3",
+  "Datasearch1": "Công cụ bên thứ 3{enter}",
+  "Tennguoidanhgia": "Nguyễn Thị Mai Dung",
+  "Chucvu": "Tester",
+  "Danhgia": " Rất tốt {enter} giỏi lắm",
+  "image": "2.jpg",
+  "Verifyten": "Nguyễn Thị Mai Dung",
+  "E_tennguoidanhgia": "Nguyễn Thị Mai Dung_edited{enter}",
+  "Texpopupdelete": "Bạn có chắc chắn muốn xóa cảm nhận khách hàng này không?",
+  "Status": "Chưa kích hoạt",
+  
+  "Banner_title": "Quản lý banner/ slider",
+  "Bannername": "Banner test 1",
+  "LoaiBanner": "Banner homepage",
+  "LinkBannner": "https://halink.vn/tienich/dem-ky-tu/",
+  "Banner_textsearch":"banner test 1",
+
+  "Tieudetintuc": " Tiêu đề 1",
+  "Motangantintuc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+  "Noidungtintuc": "{ctrl+B}Contrary to popular belief,{ctrl+B}Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC",
+  "Tukhoatintuc" : "Từ khóa 1",
+  "URL": "https://iigvietnam.com",
+  "Tacgia": "Tác giả 1",
+  "Chuyenmuc" : "Hướng dẫn{enter}",
+
+  "Menucha": "Dành cho thi sinh tự do{enter}",
+  "Kieumenu": "Học cùng giáo viên{enter}",
+  "Tenmenu": "Tên menu 1",
+  "Edit_name": "Nguyễn Thị Mai Dung",
+
+  "Thongbao_tieude": "Tiêu đề thông báo",
+  "Thongbao_noidung": " Nội dung thông báo",
+  "Thongbao_link": "https://halink.vn/tienich/dem-ky-tu/",
+  "Text_popup_xoa": "Bạn có chắc chắn muốn xóa các thông báo đã chọn này không?",
+
+
+  "Sanpham_danhgia": "Tùng test để xóa",
+  "HoTen_danhgia": "Nguyễn Thị Mai Dung",
+  "Email": "abc@gmail.com",
+  "Phone": "0355555500",
+  "Noidungdanhgia": "Sản phẩm chất lượng{enter} Đáng để bạn trải nghiệm",
+  "Date": "Choose Tuesday, June 6th, 2023",
+  "Edit_HoTen_danhgia": "Mai Dung",
+  "Search": "Mai Dung",
+
+
+
+  "Vaitro" : "Vai trò",
+  "Vaitro_trangthai": "Không hoạt động",
+  "Vaitro_Thanhvien": "Mai Dung"
+
+
+
+
+}
