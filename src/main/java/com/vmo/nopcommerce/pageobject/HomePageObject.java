@@ -2,8 +2,13 @@ package com.vmo.nopcommerce.pageobject;
 
 import com.vmo.nopcommerce.common.BasePage;
 import com.vmo.nopcommerce.interfaces.HomePageUI;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class HomePageObject extends BasePage {
     WebDriver driver;
@@ -37,10 +42,18 @@ public class HomePageObject extends BasePage {
     public void clickComputer_Software(){
         clickElement(driver,HomePageUI.CATEGORY_COMPUTER);
         clickElement(driver,HomePageUI.COMPUTER_SOFTWARE);
+        Assert.assertTrue(elementIsVisible(driver,HomePageUI.TEXT_SOFTWARE));
     }
     public void optionSortBy(String value){
         selectOption(driver,HomePageUI.DOPDOWN,value);
+        String [] array = {"Windows 8 Pro", "Sound Forge Pro 11 (recurring)","Adobe Photoshop CS4"};
+        List<WebElement> verifyTitle = driver.findElements(By.xpath(HomePageUI.PRODUCT_TITLE));
+        for (WebElement webElement : verifyTitle) {
+            webElement.getText();
+            String [] array2 = {webElement.getText()};
+            Arrays.equals(array2,array);
 
+        }
     }
 
 
