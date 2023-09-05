@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -47,13 +48,17 @@ public class HomePageObject extends BasePage {
     public void optionSortBy(String value){
         selectOption(driver,HomePageUI.DOPDOWN,value);
         String [] array = {"Windows 8 Pro", "Sound Forge Pro 11 (recurring)","Adobe Photoshop CS4"};
+        List<String> array1 = Arrays.asList(array);
         List<WebElement> verifyTitle = driver.findElements(By.xpath(HomePageUI.PRODUCT_TITLE));
+        List<String> array2 = new ArrayList<>();
         for (WebElement webElement : verifyTitle) {
-            webElement.getText();
-            String [] array2 = {webElement.getText()};
-            Arrays.equals(array2,array);
-
+            array2.add(webElement.getText());
         }
+        boolean result = Arrays.equals(array1.toArray(),array2.toArray());
+
+
+
+
     }
 
 
