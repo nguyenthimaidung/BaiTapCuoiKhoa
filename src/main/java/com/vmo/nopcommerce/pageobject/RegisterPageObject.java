@@ -20,19 +20,19 @@ public class RegisterPageObject extends BasePage {
         clickElement(driver, RegisterUI.OPEN_REGISTER);
     };
     public void inputFirstName(String value){
-        inputText(driver, RegisterUI.TXT_FIRSTNAME,value);
+        sendKeyToElement(driver, RegisterUI.TXT_FIRSTNAME,value);
     };
     public void inputLastName(String value){
-        inputText(driver, RegisterUI.TXT_LASTNAME,value);
+        sendKeyToElement(driver, RegisterUI.TXT_LASTNAME,value);
     };
     public void inputEmail(String value){
-        inputText(driver, RegisterUI.TXT_EMAIL,value);
+        sendKeyToElement(driver, RegisterUI.TXT_EMAIL,value);
     };
     public void inputPassWord(String value){
-        inputText(driver, RegisterUI.TXT_PASSWORD,value);
+        sendKeyToElement(driver, RegisterUI.TXT_PASSWORD,value);
     };
     public void inputConfirmPassWord(String value){
-        inputText(driver, RegisterUI.TXT_CF_PASSWORD,value);
+        sendKeyToElement(driver, RegisterUI.TXT_CF_PASSWORD,value);
     };
     public void clickBtnRegister(){
         clickElement(driver, RegisterUI.BTN_REGISTER);

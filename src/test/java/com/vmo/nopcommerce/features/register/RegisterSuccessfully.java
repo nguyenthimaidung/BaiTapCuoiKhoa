@@ -4,6 +4,7 @@ import com.vmo.nopcommerce.common.BasePage;
 import com.vmo.nopcommerce.common.BaseTest;
 import com.vmo.nopcommerce.interfaces.RegisterUI;
 import com.vmo.nopcommerce.pageobject.LoginPageObject;
+import com.vmo.nopcommerce.pageobject.PageGenerator;
 import com.vmo.nopcommerce.pageobject.RegisterPageObject;
 import com.vmo.nopcommerce.utils.RegisterData;
 import org.openqa.selenium.WebDriver;
@@ -22,7 +23,7 @@ public class RegisterSuccessfully extends BaseTest {
     public void setup() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        register = new RegisterPageObject(driver);
+        register = PageGenerator.getRegisterPageObject(driver);
     }
 
     @Test

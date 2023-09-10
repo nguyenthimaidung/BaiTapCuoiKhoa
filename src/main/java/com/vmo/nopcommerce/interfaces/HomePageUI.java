@@ -10,7 +10,11 @@ public class HomePageUI {
     public static String CATEGORY_COMPUTER = "//ul[@class='top-menu notmobile']//a[text()='Computers ']";
     public static String COMPUTER_SOFTWARE = " //a[text()=' Software ']";
     public static String TEXT_SOFTWARE = "//h1[text()='Software']";
-    public static String DOPDOWN = "//select[@id = 'products-orderby']";
+    public static String DOPDOWN_SORT = "//select[@id = 'products-orderby']";
     public static String PRODUCT_TITLE ="//h2[@class= 'product-title']";
+    public static String DOPDOWN_CURRENCY = "//select[@id ='customerCurrency']";
+    public static String LIST_PRICE ="//span[@class ='price actual-price']";
+    public static String ITEM_FACEBOOK = "//li[@class ='facebook']";
+
 
 }

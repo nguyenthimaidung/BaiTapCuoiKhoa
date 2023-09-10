@@ -1,6 +1,7 @@
 package com.vmo.nopcommerce.features.passwordrrecovery;
 
 import com.vmo.nopcommerce.pageobject.HomePageObject;
+import com.vmo.nopcommerce.pageobject.PageGenerator;
 import com.vmo.nopcommerce.pageobject.PasswordRecoveryObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,7 +18,7 @@ public class ForgotPasswordSuccessfully {
     public void setup() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        forgot = new PasswordRecoveryObject(driver);
+        forgot = PageGenerator.getPasswordRecoveryObject(driver);
     }
     @Test
     public void TC04_ForgotPassword(){

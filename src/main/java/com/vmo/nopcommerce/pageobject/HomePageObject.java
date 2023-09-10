@@ -21,18 +21,18 @@ public class HomePageObject extends BasePage {
         gotoURL(driver,value);
     }
     public void verifyTitle(String value){
-        Assert.assertEquals(driver.getTitle(),value);
+        Assert.assertEquals(getTitle(driver),value);
     }
 
     public void inputTextBoxSearch (){
-        inputText(driver, HomePageUI.TXT_SEARCH,value);
+        sendKeyToElement(driver, HomePageUI.TXT_SEARCH,value);
     }
     public void clickBtnSearch(){
         clickElement(driver,HomePageUI.BTN_SEARCH);
     }
     public void verifySerachProductResult(){
         if(elementIsVisible(driver,HomePageUI.ITEM_BOX)){
-            getText(driver,HomePageUI.PRODUCT_NAME).contains(value);
+            getTextElement(driver,HomePageUI.PRODUCT_NAME).contains(value);
         }
         else {
             Assert.assertTrue(elementIsVisible(driver,HomePageUI.NO_RESULT));
@@ -45,7 +45,7 @@ public class HomePageObject extends BasePage {
         Assert.assertTrue(elementIsVisible(driver,HomePageUI.TEXT_SOFTWARE));
     }
     public void optionSortBy(String value){
-        selectOption(driver,HomePageUI.DOPDOWN,value);
+        selectOption(driver,HomePageUI.DOPDOWN_SORT,value);
         String [] array = {"Windows 8 Pro", "Sound Forge Pro 11 (recurring)","Adobe Photoshop CS4"};
         List<WebElement> verifyTitle = driver.findElements(By.xpath(HomePageUI.PRODUCT_TITLE));
         for (WebElement webElement : verifyTitle) {
@@ -54,6 +54,26 @@ public class HomePageObject extends BasePage {
             Arrays.equals(array2,array);
 
         }
+    }
+
+    public void selectCurrency(String text){
+        selectItemInDefaultDropdownByText(driver,HomePageUI.DOPDOWN_CURRENCY,text);
+        String [] array = {"€1032.00", "€1548.00","€210.70","€21.50"};
+        List<WebElement> verifyTitle = driver.findElements(By.xpath(HomePageUI.LIST_PRICE));
+        for (WebElement webElement : verifyTitle) {
+            webElement.getText();
+            String [] array2 = {webElement.getText()};
+            Arrays.equals(array2,array);
+
+        }
+    }
+    public void clickFacebook(){
+        clickElement(driver,HomePageUI.ITEM_FACEBOOK);
+        String titleFacebook ="NopCommerce | Facebook";
+        switchToWindowByTitle(driver,titleFacebook);
+        Assert.assertEquals(getTitle(driver),titleFacebook);
+
+
     }
 
 
