@@ -10,20 +10,21 @@ import org.testng.annotations.Test;
 
 public class SocialMedia {
     WebDriver driver;
-    private HomePageObject productsearch;
+    private HomePageObject homePage;
 
     @BeforeMethod
     public void setup() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        productsearch = PageGenerator.getHomePageObject(driver);
+        homePage = PageGenerator.getHomePageObject(driver);
         //productsearch = new HomePageObject(driver),
     }
     @Test
     public void TC07_CheckselecctSocialMedia(){
-        productsearch.gotoURL("https://demo.nopcommerce.com/");
-        productsearch.verifyTitle("nopCommerce demo store");
-        productsearch.clickFacebook();
+        homePage.gotoURL("https://demo.nopcommerce.com/");
+        homePage.verifyTitle("nopCommerce demo store");
+        homePage.clickFacebook();
+        homePage.verifyTitleFacebook();
     }
     @AfterMethod(alwaysRun = true)
     public void tearDown() {

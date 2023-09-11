@@ -10,19 +10,20 @@ import org.testng.annotations.Test;
 
 public class ChangeCurrency {
     WebDriver driver;
-    private HomePageObject productsearch;
+    private HomePageObject homepage;
 
     @BeforeMethod
     public void setup() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        productsearch = PageGenerator.getHomePageObject(driver);
+        homepage = PageGenerator.getHomePageObject(driver);
     }
     @Test
     public void TC06_ChangeCurrency(){
-        productsearch.gotoURL("https://demo.nopcommerce.com/");
-        productsearch.verifyTitle("nopCommerce demo store");
-        productsearch.selectCurrency("Euro");
+        homepage.gotoURL("https://demo.nopcommerce.com/");
+        homepage.verifyTitle("nopCommerce demo store");
+        homepage.selectCurrency("Euro");
+        homepage.verifyCurrencyDisplayed();
     }
     @AfterMethod(alwaysRun = true)
     public void tearDown() {

@@ -63,22 +63,23 @@ public class HomePageObject extends BasePage {
 
     public void selectCurrency(String text){
         selectItemInDefaultDropdownByText(driver,HomePageUI.DOPDOWN_CURRENCY,text);
-        String [] array = {"€1032.00", "€1548.00","€210.70","€21.50"};
+        isElementSelected(driver,HomePageUI.VERIFY_CERRENCY_SELECTED);
+    }
+    public void verifyCurrencyDisplayed(){
         List<WebElement> verifyTitle = driver.findElements(By.xpath(HomePageUI.LIST_PRICE));
         for (WebElement webElement : verifyTitle) {
             webElement.getText();
-            String [] array2 = {webElement.getText()};
-            Arrays.equals(array2,array);
-
+            webElement.getText().contains("€");
         }
     }
     public void clickFacebook(){
         clickElement(driver,HomePageUI.ITEM_FACEBOOK);
+    }
+    public void verifyTitleFacebook(){
         String titleFacebook ="NopCommerce | Facebook";
         switchToWindowByTitle(driver,titleFacebook);
+        waitForElementVisible(driver,HomePageUI.VERIFY_WAIT);
         Assert.assertEquals(getTitle(driver),titleFacebook);
-
-
     }
 
 

@@ -567,6 +567,12 @@ public class BasePage {
 
     }
 
+    public void verifyContains(String args[]) {
+        String name = "what do you know about me";
+        System.out.println(name.contains("do you know"));
+        }
+
+
     public String getDynamiLocator(String locator, String... params) {
         return String.format(locator, (Object[]) params);
     }

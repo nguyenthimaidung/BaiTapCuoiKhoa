@@ -13,8 +13,10 @@ public class HomePageUI {
     public static String DOPDOWN_SORT = "//select[@id = 'products-orderby']";
     public static String PRODUCT_TITLE ="//h2[@class= 'product-title']";
     public static String DOPDOWN_CURRENCY = "//select[@id ='customerCurrency']";
+    public static String VERIFY_CERRENCY_SELECTED = "//option[text() = 'Euro']";
     public static String LIST_PRICE ="//span[@class ='price actual-price']";
     public static String ITEM_FACEBOOK = "//li[@class ='facebook']";
+    public static String VERIFY_WAIT = "(//span[text() = 'Connect with NopCommerce on Facebook'])[1]";
 
 
 }
