@@ -1,6 +1,7 @@
 package com.vmo.nopcommerce.features.hompage;
 
 import com.vmo.nopcommerce.pageobject.HomePageObject;
+import com.vmo.nopcommerce.pageobject.PageGenerator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -15,7 +16,8 @@ public class SerachAndSort {
     public void setup() {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        productsearch = new HomePageObject(driver);
+        productsearch = PageGenerator.getHomePageObject(driver);
+        //productsearch = new HomePageObject(driver),
     }
     @Test
     public void TC03_ProductSearchAndSort(){

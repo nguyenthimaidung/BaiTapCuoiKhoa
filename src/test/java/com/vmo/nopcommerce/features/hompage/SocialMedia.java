@@ -8,8 +8,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ProductionSearchSuccessfully {
-
+public class SocialMedia {
     WebDriver driver;
     private HomePageObject productsearch;
 
@@ -18,14 +17,13 @@ public class ProductionSearchSuccessfully {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         productsearch = PageGenerator.getHomePageObject(driver);
+        //productsearch = new HomePageObject(driver),
     }
     @Test
-    public void TC02_ProductSearch(){
+    public void TC07_CheckselecctSocialMedia(){
         productsearch.gotoURL("https://demo.nopcommerce.com/");
         productsearch.verifyTitle("nopCommerce demo store");
-        productsearch.inputTextBoxSearch();
-        productsearch.clickBtnSearch();
-        productsearch.verifySerachProductResult();
+        productsearch.clickFacebook();
     }
     @AfterMethod(alwaysRun = true)
     public void tearDown() {

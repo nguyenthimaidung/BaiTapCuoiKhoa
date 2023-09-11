@@ -24,7 +24,7 @@ public class PasswordRecoveryObject extends BasePage {
         clickElement(driver,PasswordRecoveryUI.FORGOT_PASSWORD);
     }
     public void inputEmail(String value){
-        inputText(driver,PasswordRecoveryUI.INPUT_EMAIL,value);
+        sendKeyToElement(driver,PasswordRecoveryUI.INPUT_EMAIL,value);
     }
     public void clickBtnRecover(){
         clickElement(driver,PasswordRecoveryUI.BTN_RECOVER);
