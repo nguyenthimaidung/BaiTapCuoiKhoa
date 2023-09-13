@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 public class RegisterSuccessfully extends BaseTest {
@@ -19,10 +20,10 @@ public class RegisterSuccessfully extends BaseTest {
     WebDriver driver;
     private RegisterPageObject register;
 
+    @Parameters("browser")
     @BeforeMethod
-    public void setup() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+    public void setup(String browser){
+        driver = getDriverBrowser(browser);
         register = PageGenerator.getRegisterPageObject(driver);
     }
 
@@ -50,6 +51,7 @@ public class RegisterSuccessfully extends BaseTest {
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.quit();
+        cleanBrowserAndDriver();
     }
 
 }

@@ -10,13 +10,18 @@ import org.testng.annotations.*;
 public class ChangeCurrency extends BaseTest {
     public WebDriver driver;
     private HomePageObject homepage;
-    private String browser = "CHROME";
+//    private String browser = "CHROME";
+//    @BeforeMethod
+//    public void setup(){
+//        driver = getDriverBrowser(browser);
+
+//    }
+    @Parameters("browser")
     @BeforeMethod
-    public void setup(){
+    public void setup(String browser){
         driver = getDriverBrowser(browser);
         homepage = new HomePageObject(driver);
     }
-
     @Test
     public void TC06_ChangeCurrency(){
         homepage.gotoURL("https://demo.nopcommerce.com/");
