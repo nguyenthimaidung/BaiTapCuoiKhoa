@@ -1,6 +1,7 @@
 package com.vmo.nopcommerce.features.passwordrrecovery;
 
 import com.vmo.nopcommerce.common.BaseTest;
+import com.vmo.nopcommerce.helper.Log;
 import com.vmo.nopcommerce.pageobject.HomePageObject;
 import com.vmo.nopcommerce.pageobject.PageGenerator;
 import com.vmo.nopcommerce.pageobject.PasswordRecoveryObject;
@@ -21,11 +22,13 @@ public class ForgotPasswordSuccessfully extends BaseTest {
     public void setup(String browser){
         driver = getDriverBrowser(browser);
         forgot = PageGenerator.getPasswordRecoveryObject(driver);
+        Log.info("Open driver success");
     }
     @Test
     public void TC04_ForgotPassword(){
         forgot.gotoURL("https://demo.nopcommerce.com/");
         forgot.verifyTitle("nopCommerce demo store");
+        Log.info("Open correct page");
         forgot.clickLogin();
         forgot.verifyTitle("nopCommerce demo store. Login");
         forgot.clickForgotPassword();
@@ -38,5 +41,6 @@ public class ForgotPasswordSuccessfully extends BaseTest {
     public void tearDown() {
         driver.quit();
         cleanBrowserAndDriver();
+        Log.info("Close dirver success");
     }
 }

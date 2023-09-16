@@ -1,0 +1,41 @@
+[16-09-2023 11:07:07.505 INFO] - Open driver success
+[16-09-2023 11:07:09.552 INFO] - Open correct page
+[16-09-2023 11:07:11.397 INFO] - Select successfully currency
+[16-09-2023 11:07:11.644 INFO] - List currency displayed correct
+[16-09-2023 11:07:12.608 INFO] - Close dirver success
+[16-09-2023 11:07:15.068 INFO] - Open driver success
+[16-09-2023 11:07:16.633 INFO] - Open correct page
+[16-09-2023 11:07:16.911 INFO] - Input data search success
+[16-09-2023 11:07:18.460 INFO] - Product displayed the same data input
+[16-09-2023 11:07:19.311 INFO] - Close dirver success
+[16-09-2023 11:07:21.530 INFO] - Open driver success
+[16-09-2023 11:07:23.462 INFO] - Open correct page
+[16-09-2023 11:07:25.577 INFO] - Displayed screen software
+[16-09-2023 11:07:25.839 INFO] - List product displayed Z -> A
+[16-09-2023 11:07:26.737 INFO] - Close dirver success
+[16-09-2023 11:07:29.016 INFO] - Open driver success
+[16-09-2023 11:07:30.985 INFO] - Open correct page
+[16-09-2023 11:07:31.191 INFO] - Open page facebook
+[16-09-2023 11:07:33.304 INFO] - Switch to page facebook success
+[16-09-2023 11:07:34.259 INFO] - Close dirver success
+[16-09-2023 11:07:36.486 INFO] - Open driver success
+[16-09-2023 11:07:38.686 INFO] - Open correct page
+[16-09-2023 11:07:39.941 INFO] - Displayed screen detail
+[16-09-2023 11:07:41.542 INFO] - Add comment success
+[16-09-2023 11:07:41.589 INFO] - Displayed correct text after add cmt
+[16-09-2023 11:07:42.452 INFO] - Close dirver success
+[16-09-2023 11:07:44.790 INFO] - Open driver success
+[16-09-2023 11:07:46.512 INFO] - Open correct page
+[16-09-2023 11:07:50.222 INFO] - Close dirver success
+[16-09-2023 11:07:52.700 INFO] - Open driver success
+[16-09-2023 11:07:54.494 INFO] - Open correct page
+[16-09-2023 11:07:55.625 INFO] - Open screen register success
+[16-09-2023 11:07:55.671 INFO] - Open correct screen Register
+[16-09-2023 11:07:56.262 INFO] - Input firstname success
+[16-09-2023 11:07:56.469 INFO] - Input lastname success
+[16-09-2023 11:07:56.683 INFO] - Input email success
+[16-09-2023 11:07:56.858 INFO] - Input password success
+[16-09-2023 11:07:57.044 INFO] - Input confirm password success
+[16-09-2023 11:07:58.313 INFO] - Register success
+[16-09-2023 11:07:58.359 INFO] - Displayed correct message after register
+[16-09-2023 11:07:59.256 INFO] - Close dirver success

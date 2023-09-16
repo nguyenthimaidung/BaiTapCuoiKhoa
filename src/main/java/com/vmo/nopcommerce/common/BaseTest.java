@@ -1,14 +1,18 @@
 package com.vmo.nopcommerce.common;
 
 import com.vmo.nopcommerce.FactoryEnviroment.LocalFactory;
+import com.vmo.nopcommerce.helper.TestNGListener;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Listeners;
 
 import java.io.IOException;
 import java.time.Duration;
+
+@Listeners(TestNGListener.class)
 
 public class BaseTest extends BasePage {
     private  WebDriver driver;
