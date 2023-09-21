@@ -29,15 +29,11 @@ public class ChangeCurrency extends BaseTest {
     public void TC06_ChangeCurrency(){
         homepage.gotoURL("https://demo.nopcommerce.com/");
         homepage.verifyTitle("nopCommerce demo store");
-        Log.info("Open correct page");
         homepage.selectCurrency("Euro");
-        Log.info("Select successfully currency");
         homepage.verifyCurrencyDisplayed();
-        Log.info("List currency displayed correct");
     }
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         cleanBrowserAndDriver();
-        Log.info("Close dirver success");
     }
 }

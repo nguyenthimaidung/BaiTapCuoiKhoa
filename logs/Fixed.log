@@ -44,3 +44,17 @@
 [16-09-2023 11:07:58.313 INFO] - Register success
 [16-09-2023 11:07:58.359 INFO] - Displayed correct message after register
 [16-09-2023 11:07:59.256 INFO] - Close dirver success
+[21-09-2023 17:12:45.253 INFO] - Open driver success
+[21-09-2023 17:12:47.146 INFO] - Open correct page
+[21-09-2023 17:12:48.703 INFO] - Select successfully currency
+[21-09-2023 17:12:48.864 INFO] - List currency displayed correct
+[21-09-2023 17:12:50.516 INFO] - Close dirver success
+[21-09-2023 17:47:38.142 INFO] - Open driver success
+[21-09-2023 17:47:40.558 INFO] - Verify title successfully
+[21-09-2023 17:47:43.090 INFO] - Select successfully
+[21-09-2023 17:47:43.133 INFO] - Successfully
+[21-09-2023 17:50:24.457 INFO] - Open driver success
+[21-09-2023 17:50:27.351 INFO] - Verify title successfully
+[21-09-2023 17:50:29.117 INFO] - Select successfully
+[21-09-2023 17:50:29.159 INFO] - Successfully
+[21-09-2023 17:50:29.321 INFO] - ---------- TC06_ChangeCurrency Success test ----------

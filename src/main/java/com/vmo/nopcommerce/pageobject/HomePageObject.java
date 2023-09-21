@@ -1,6 +1,7 @@
 package com.vmo.nopcommerce.pageobject;
 
 import com.vmo.nopcommerce.common.BasePage;
+import com.vmo.nopcommerce.helper.Log;
 import com.vmo.nopcommerce.interfaces.HomePageUI;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,6 +24,7 @@ public class HomePageObject extends BasePage {
     }
     public void verifyTitle(String value){
         Assert.assertEquals(getTitle(driver),value);
+        Log.allure("Verify title successfully");
     }
 
     public void inputTextBoxSearch (){
@@ -63,7 +65,9 @@ public class HomePageObject extends BasePage {
 
     public void selectCurrency(String text){
         selectItemInDefaultDropdownByText(driver,HomePageUI.DOPDOWN_CURRENCY,text);
+        Log.allure("Select successfully");
         isElementSelected(driver,HomePageUI.VERIFY_CERRENCY_SELECTED);
+        Log.allure("Successfully");
     }
     public void verifyCurrencyDisplayed(){
         List<WebElement> verifyTitle = driver.findElements(By.xpath(HomePageUI.LIST_PRICE));
