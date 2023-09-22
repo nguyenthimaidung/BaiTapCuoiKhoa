@@ -58,3 +58,123 @@
 [21-09-2023 17:50:29.117 INFO] - Select successfully
 [21-09-2023 17:50:29.159 INFO] - Successfully
 [21-09-2023 17:50:29.321 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[22-09-2023 09:46:15.095 INFO] - Open driver success
+[22-09-2023 09:46:16.601 INFO] - Verify title successfully
+[22-09-2023 09:46:17.917 INFO] - Select successfully
+[22-09-2023 09:46:17.938 INFO] - Successfully
+[22-09-2023 09:46:18.045 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[22-09-2023 10:01:20.069 INFO] - Open driver success
+[22-09-2023 10:01:22.200 INFO] - Verify title successfully
+[22-09-2023 10:01:23.425 INFO] - Select successfully
+[22-09-2023 10:01:23.443 INFO] - Successfully
+[22-09-2023 10:01:23.529 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[22-09-2023 10:01:25.720 INFO] - Open driver success
+[22-09-2023 10:01:26.919 INFO] - Verify title successfully
+[22-09-2023 10:01:26.920 INFO] - Open correct page
+[22-09-2023 10:01:27.014 INFO] - Input data search success
+[22-09-2023 10:01:28.167 INFO] - Product displayed the same data input
+[22-09-2023 10:01:28.167 INFO] - ---------- TC02_ProductSearch Success test ----------
+[22-09-2023 10:01:29.009 INFO] - Close dirver success
+[22-09-2023 10:11:27.749 INFO] - Open driver success
+[22-09-2023 10:11:29.319 INFO] - Open correct page
+[22-09-2023 10:11:30.556 INFO] - Select Currency Successfully
+[22-09-2023 10:11:30.573 INFO] - Currency displayed correct
+[22-09-2023 10:11:30.688 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[22-09-2023 10:11:32.824 INFO] - Open driver success
+[22-09-2023 10:11:34.370 INFO] - Open correct page
+[22-09-2023 10:11:34.457 INFO] - Input data search success
+[22-09-2023 10:11:35.654 INFO] - Product displayed the same data input
+[22-09-2023 10:11:35.655 INFO] - ---------- TC02_ProductSearch Success test ----------
+[22-09-2023 10:11:36.569 INFO] - Close dirver success
+[22-09-2023 11:02:24.400 INFO] - Open correct page
+[22-09-2023 11:02:25.597 INFO] - Select Currency Successfully
+[22-09-2023 11:02:25.615 INFO] - Currency displayed correct
+[22-09-2023 11:02:25.716 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[22-09-2023 11:02:29.227 INFO] - Open correct page
+[22-09-2023 11:02:29.324 INFO] - Input data search success
+[22-09-2023 11:02:30.999 INFO] - Product displayed the same data input
+[22-09-2023 11:02:31.000 INFO] - ---------- TC02_ProductSearch Success test ----------
+[22-09-2023 11:02:56.197 INFO] - Open correct page
+[22-09-2023 11:02:57.487 INFO] - Select Currency Successfully
+[22-09-2023 11:02:57.508 INFO] - Currency displayed correct
+[22-09-2023 11:02:57.616 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[22-09-2023 11:03:01.005 INFO] - Open correct page
+[22-09-2023 11:03:01.098 INFO] - Input data search success
+[22-09-2023 11:03:02.214 INFO] - Product displayed the same data input
+[22-09-2023 11:03:02.214 INFO] - ---------- TC02_ProductSearch Success test ----------
+[22-09-2023 11:03:05.325 INFO] - Open correct page
+[22-09-2023 11:03:07.110 INFO] - Displayed screen software
+[22-09-2023 11:03:07.241 INFO] - List product displayed Z -> A
+[22-09-2023 11:03:07.242 INFO] - ---------- TC03_ProductSearchAndSort Success test ----------
+[22-09-2023 11:03:10.459 INFO] - Open correct page
+[22-09-2023 11:03:10.537 INFO] - Open page facebook
+[22-09-2023 11:03:12.884 INFO] - Switch to page facebook success
+[22-09-2023 11:03:12.885 INFO] - ---------- TC07_CheckselecctSocialMedia Success test ----------
+[22-09-2023 11:03:15.518 INFO] - Open correct page
+[22-09-2023 11:03:16.502 INFO] - Displayed screen detail
+[22-09-2023 11:03:17.278 INFO] - Add comment success
+[22-09-2023 11:03:17.352 INFO] - Displayed correct text after add cmt
+[22-09-2023 11:03:17.352 INFO] - ---------- TC05_AddComment Success test ----------
+[22-09-2023 11:03:18.179 INFO] - Close dirver success
+[22-09-2023 11:03:20.440 INFO] - Open correct page
+[22-09-2023 11:03:21.405 INFO] - Open screen login
+[22-09-2023 11:03:21.419 INFO] - Open correct page
+[22-09-2023 11:03:21.859 INFO] - Open screen forgot password
+[22-09-2023 11:03:21.871 INFO] - Open correct page
+[22-09-2023 11:03:22.008 INFO] - Input email successfully
+[22-09-2023 11:03:22.318 INFO] - Forgot password success
+[22-09-2023 11:03:22.415 INFO] - Displayed correct message after forgot password 
+[22-09-2023 11:03:22.416 INFO] - ---------- TC04_ForgotPassword Success test ----------
+[22-09-2023 11:03:25.561 INFO] - Open correct page
+[22-09-2023 11:03:26.088 INFO] - Open screen register success
+[22-09-2023 11:03:26.129 INFO] - Open correct screen Register
+[22-09-2023 11:03:26.456 INFO] - Input firstname success
+[22-09-2023 11:03:26.555 INFO] - Input lastname success
+[22-09-2023 11:03:26.666 INFO] - Input email success
+[22-09-2023 11:03:26.770 INFO] - Input password success
+[22-09-2023 11:03:26.854 INFO] - Input confirm password success
+[22-09-2023 11:03:27.503 INFO] - Register success
+[22-09-2023 11:03:27.521 INFO] - Displayed correct message after register
+[22-09-2023 11:03:27.522 INFO] - ---------- TC01_User_registration Success test ----------
+[22-09-2023 11:09:35.106 INFO] - Open correct page
+[22-09-2023 11:09:36.390 INFO] - Select Currency Successfully
+[22-09-2023 11:09:36.419 INFO] - Currency displayed correct
+[22-09-2023 11:09:36.532 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[22-09-2023 11:09:40.121 INFO] - Open correct page
+[22-09-2023 11:09:40.203 INFO] - Input data search success
+[22-09-2023 11:09:41.350 INFO] - Product displayed the same data input
+[22-09-2023 11:09:41.350 INFO] - ---------- TC02_ProductSearch Success test ----------
+[22-09-2023 11:09:44.470 INFO] - Open correct page
+[22-09-2023 11:09:45.440 INFO] - Displayed screen software
+[22-09-2023 11:09:45.595 INFO] - List product displayed Z -> A
+[22-09-2023 11:09:45.596 INFO] - ---------- TC03_ProductSearchAndSort Success test ----------
+[22-09-2023 11:09:48.850 INFO] - Open correct page
+[22-09-2023 11:09:48.923 INFO] - Open page facebook
+[22-09-2023 11:09:50.192 INFO] - Switch to page facebook success
+[22-09-2023 11:09:50.193 INFO] - ---------- TC07_CheckselecctSocialMedia Success test ----------
+[22-09-2023 11:09:53.757 INFO] - Open correct page
+[22-09-2023 11:09:54.267 INFO] - Displayed screen detail
+[22-09-2023 11:09:54.993 INFO] - Add comment success
+[22-09-2023 11:09:55.026 INFO] - Displayed correct text after add cmt
+[22-09-2023 11:09:55.027 INFO] - ---------- TC05_AddComment Success test ----------
+[22-09-2023 11:09:56.012 INFO] - Close dirver success
+[22-09-2023 11:09:58.348 INFO] - Open correct page
+[22-09-2023 11:09:59.286 INFO] - Open screen login
+[22-09-2023 11:09:59.291 INFO] - Open correct page
+[22-09-2023 11:09:59.648 INFO] - Open screen forgot password
+[22-09-2023 11:09:59.653 INFO] - Open correct page
+[22-09-2023 11:09:59.741 INFO] - Input email successfully
+[22-09-2023 11:10:00.165 INFO] - Forgot password success
+[22-09-2023 11:10:00.189 INFO] - Displayed correct message after forgot password 
+[22-09-2023 11:10:00.189 INFO] - ---------- TC04_ForgotPassword Success test ----------
+[22-09-2023 11:10:03.302 INFO] - Open correct page
+[22-09-2023 11:10:04.314 INFO] - Open screen register success
+[22-09-2023 11:10:04.359 INFO] - Open correct screen Register
+[22-09-2023 11:10:04.677 INFO] - Input firstname success
+[22-09-2023 11:10:04.776 INFO] - Input lastname success
+[22-09-2023 11:10:04.888 INFO] - Input email success
+[22-09-2023 11:10:04.997 INFO] - Input password success
+[22-09-2023 11:10:05.073 INFO] - Input confirm password success
+[22-09-2023 11:10:05.868 INFO] - Register success
+[22-09-2023 11:10:05.899 INFO] - Displayed correct message after register
+[22-09-2023 11:10:05.900 INFO] - ---------- TC01_User_registration Success test ----------

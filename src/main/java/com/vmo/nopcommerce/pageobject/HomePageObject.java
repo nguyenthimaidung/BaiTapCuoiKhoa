@@ -24,11 +24,12 @@ public class HomePageObject extends BasePage {
     }
     public void verifyTitle(String value){
         Assert.assertEquals(getTitle(driver),value);
-        Log.allure("Verify title successfully");
+        Log.allure("Open correct page");
     }
 
     public void inputTextBoxSearch (){
         sendKeyToElement(driver, HomePageUI.TXT_SEARCH,value);
+        Log.allure("Input data search success");
     }
     public void clickBtnSearch(){
         clickElement(driver,HomePageUI.BTN_SEARCH);
@@ -39,13 +40,14 @@ public class HomePageObject extends BasePage {
         }
         else {
             Assert.assertTrue(elementIsVisible(driver,HomePageUI.NO_RESULT));
-
         }
+        Log.allure("Product displayed the same data input");
     }
     public void clickComputer_Software(){
         clickElement(driver,HomePageUI.CATEGORY_COMPUTER);
         clickElement(driver,HomePageUI.COMPUTER_SOFTWARE);
         Assert.assertTrue(elementIsVisible(driver,HomePageUI.TEXT_SOFTWARE));
+        Log.allure("Displayed screen software");
     }
     public void optionSortBy(String value){
         selectOption(driver,HomePageUI.DOPDOWN_SORT,value);
@@ -57,17 +59,14 @@ public class HomePageObject extends BasePage {
             array2.add(webElement.getText());
         }
         boolean result = Arrays.equals(array1.toArray(),array2.toArray());
-
-
-
-
+        Log.allure("List product displayed Z -> A");
     }
 
     public void selectCurrency(String text){
         selectItemInDefaultDropdownByText(driver,HomePageUI.DOPDOWN_CURRENCY,text);
-        Log.allure("Select successfully");
+        Log.allure("Select Currency Successfully");
         isElementSelected(driver,HomePageUI.VERIFY_CERRENCY_SELECTED);
-        Log.allure("Successfully");
+        Log.allure("Currency displayed correct");
     }
     public void verifyCurrencyDisplayed(){
         List<WebElement> verifyTitle = driver.findElements(By.xpath(HomePageUI.LIST_PRICE));
@@ -78,12 +77,14 @@ public class HomePageObject extends BasePage {
     }
     public void clickFacebook(){
         clickElement(driver,HomePageUI.ITEM_FACEBOOK);
+        Log.allure("Open page facebook");
     }
     public void verifyTitleFacebook(){
         String titleFacebook ="NopCommerce | Facebook";
         switchToWindowByTitle(driver,titleFacebook);
         waitForElementVisible(driver,HomePageUI.VERIFY_WAIT);
         Assert.assertEquals(getTitle(driver),titleFacebook);
+        Log.allure("Switch to page facebook success");
     }
 
 

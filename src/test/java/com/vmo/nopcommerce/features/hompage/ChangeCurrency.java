@@ -5,10 +5,17 @@ import com.vmo.nopcommerce.helper.Log;
 import com.vmo.nopcommerce.helper.TestNGListener;
 import com.vmo.nopcommerce.pageobject.HomePageObject;
 import com.vmo.nopcommerce.pageobject.PageGenerator;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 //@Listeners(TestNGListener.class)
+
+@Epic("Nopcommerce")
+@Feature("HomePage")
+@Story("Change Currency")
 public class ChangeCurrency extends BaseTest {
     public WebDriver driver;
     private HomePageObject homepage;
@@ -23,7 +30,6 @@ public class ChangeCurrency extends BaseTest {
     public void setup(String browser){
         driver = getDriverBrowser(browser);
         homepage = new HomePageObject(driver);
-        Log.info("Open driver success");
     }
     @Test
     public void TC06_ChangeCurrency(){

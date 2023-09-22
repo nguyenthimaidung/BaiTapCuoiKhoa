@@ -1,0 +1,8 @@
+com\vmo\nopcommerce\features\hompage\ProductionSearchSuccessfully.class
+com\vmo\nopcommerce\features\hompage\ChangeCurrency.class
+com\vmo\nopcommerce\features\hompage\SerachAndSort.class
+com\vmo\nopcommerce\features\register\RegisterSuccessfully.class
+com\vmo\nopcommerce\features\login\LoginSuccessfully.class
+com\vmo\nopcommerce\features\newpage\AddCommentSuccess.class
+com\vmo\nopcommerce\features\passwordrrecovery\ForgotPasswordSuccessfully.class
+com\vmo\nopcommerce\features\hompage\SocialMedia.class

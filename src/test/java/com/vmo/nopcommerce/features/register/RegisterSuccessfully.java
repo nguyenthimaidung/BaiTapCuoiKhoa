@@ -8,6 +8,9 @@ import com.vmo.nopcommerce.pageobject.LoginPageObject;
 import com.vmo.nopcommerce.pageobject.PageGenerator;
 import com.vmo.nopcommerce.pageobject.RegisterPageObject;
 import com.vmo.nopcommerce.utils.RegisterData;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -15,6 +18,10 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+@Epic("Nopcommerce")
+@Feature("RegisterPageObject")
+@Story("RegisterSuccessfully")
 
 public class RegisterSuccessfully extends BaseTest {
 
@@ -26,39 +33,28 @@ public class RegisterSuccessfully extends BaseTest {
     public void setup(String browser){
         driver = getDriverBrowser(browser);
         register = PageGenerator.getRegisterPageObject(driver);
-        Log.info("Open driver success");
     }
 
     @Test
     public void TC01_User_registration(){
         register.gotoURL("https://demo.nopcommerce.com/");
         register.verifyTitle("nopCommerce demo store");
-        Log.info("Open correct page");
         register.clickOpenScreenRegister();
-        Log.info("Open screen register success");
         register.verifyRegisterPage();
-        Log.info("Open correct screen Register");
         register.inputFirstName(RegisterData.FIRSTNAME);
-        Log.info("Input firstname success");
         register.inputLastName(RegisterData.LASTNAME);
-        Log.info("Input lastname success");
         register.inputEmail(RegisterData.EMAIL);
-        Log.info("Input email success");
         register.inputPassWord(RegisterData.PASSWORD);
-        Log.info("Input password success");
         register.inputConfirmPassWord(RegisterData.CF_PASSWORD);
-        Log.info("Input confirm password success");
         register.clickBtnRegister();
-        Log.info("Register success");
-        register.verifyMessageAffterRegister();
-        Log.info("Displayed correct message after register");
+        register.verifyMessageAfterRegister();
+
 
     }
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.quit();
         cleanBrowserAndDriver();
-        Log.info("Close dirver success");
     }
 
 }

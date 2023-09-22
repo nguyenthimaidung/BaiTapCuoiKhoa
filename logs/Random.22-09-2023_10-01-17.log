@@ -1,0 +1,12 @@
+[22-09-2023 10:01:20.069 INFO] - Open driver success
+[22-09-2023 10:01:22.200 INFO] - Verify title successfully
+[22-09-2023 10:01:23.425 INFO] - Select successfully
+[22-09-2023 10:01:23.443 INFO] - Successfully
+[22-09-2023 10:01:23.529 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[22-09-2023 10:01:25.720 INFO] - Open driver success
+[22-09-2023 10:01:26.919 INFO] - Verify title successfully
+[22-09-2023 10:01:26.920 INFO] - Open correct page
+[22-09-2023 10:01:27.014 INFO] - Input data search success
+[22-09-2023 10:01:28.167 INFO] - Product displayed the same data input
+[22-09-2023 10:01:28.167 INFO] - ---------- TC02_ProductSearch Success test ----------
+[22-09-2023 10:01:29.009 INFO] - Close dirver success

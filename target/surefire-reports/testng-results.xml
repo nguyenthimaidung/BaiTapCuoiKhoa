@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-22T11:09:29 ICT" name="All Test Suite" finished-at="2023-09-22T11:10:06 ICT" duration-ms="37741">
+    <groups>
+    </groups>
+    <test started-at="2023-09-22T11:09:29 ICT" name="C:/vmo_auto_fresher/src/test/java/com/vmo/nopcommerce/features/hompage/ChangeCurrency.java" finished-at="2023-09-22T11:10:06 ICT" duration-ms="37741">
+      <class name="com.vmo.nopcommerce.features.newpage.AddCommentSuccess">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vmo.nopcommerce.features.newpage.AddCommentSuccess@21f8e55f]" started-at="2023-09-22T11:09:51 ICT" name="setup" finished-at="2023-09-22T11:09:52 ICT" duration-ms="1102" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC05_AddComment()[pri:0, instance:com.vmo.nopcommerce.features.newpage.AddCommentSuccess@21f8e55f]" started-at="2023-09-22T11:09:52 ICT" name="TC05_AddComment" finished-at="2023-09-22T11:09:55 ICT" duration-ms="2518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC05_AddComment -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vmo.nopcommerce.features.newpage.AddCommentSuccess@21f8e55f]" started-at="2023-09-22T11:09:55 ICT" name="tearDown" finished-at="2023-09-22T11:09:56 ICT" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vmo.nopcommerce.features.newpage.AddCommentSuccess -->
+      <class name="com.vmo.nopcommerce.features.passwordrrecovery.ForgotPasswordSuccessfully">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vmo.nopcommerce.features.passwordrrecovery.ForgotPasswordSuccessfully@d5ce97f]" started-at="2023-09-22T11:09:56 ICT" name="setup" finished-at="2023-09-22T11:09:57 ICT" duration-ms="1091" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC04_ForgotPassword()[pri:0, instance:com.vmo.nopcommerce.features.passwordrrecovery.ForgotPasswordSuccessfully@d5ce97f]" started-at="2023-09-22T11:09:57 ICT" name="TC04_ForgotPassword" finished-at="2023-09-22T11:10:00 ICT" duration-ms="3083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC04_ForgotPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vmo.nopcommerce.features.passwordrrecovery.ForgotPasswordSuccessfully@d5ce97f]" started-at="2023-09-22T11:10:00 ICT" name="tearDown" finished-at="2023-09-22T11:10:01 ICT" duration-ms="692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vmo.nopcommerce.features.passwordrrecovery.ForgotPasswordSuccessfully -->
+      <class name="com.vmo.nopcommerce.features.hompage.ChangeCurrency">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vmo.nopcommerce.features.hompage.ChangeCurrency@28348c6]" started-at="2023-09-22T11:09:29 ICT" name="setup" finished-at="2023-09-22T11:09:33 ICT" duration-ms="4552" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC06_ChangeCurrency()[pri:0, instance:com.vmo.nopcommerce.features.hompage.ChangeCurrency@28348c6]" started-at="2023-09-22T11:09:33 ICT" name="TC06_ChangeCurrency" finished-at="2023-09-22T11:09:36 ICT" duration-ms="2749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC06_ChangeCurrency -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vmo.nopcommerce.features.hompage.ChangeCurrency@28348c6]" started-at="2023-09-22T11:09:36 ICT" name="tearDown" finished-at="2023-09-22T11:09:37 ICT" duration-ms="803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vmo.nopcommerce.features.hompage.ChangeCurrency -->
+      <class name="com.vmo.nopcommerce.features.hompage.SerachAndSort">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vmo.nopcommerce.features.hompage.SerachAndSort@13f9ad9]" started-at="2023-09-22T11:09:42 ICT" name="setup" finished-at="2023-09-22T11:09:43 ICT" duration-ms="1046" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC03_ProductSearchAndSort()[pri:0, instance:com.vmo.nopcommerce.features.hompage.SerachAndSort@13f9ad9]" started-at="2023-09-22T11:09:43 ICT" name="TC03_ProductSearchAndSort" finished-at="2023-09-22T11:09:45 ICT" duration-ms="2346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC03_ProductSearchAndSort -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vmo.nopcommerce.features.hompage.SerachAndSort@13f9ad9]" started-at="2023-09-22T11:09:45 ICT" name="tearDown" finished-at="2023-09-22T11:09:46 ICT" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vmo.nopcommerce.features.hompage.SerachAndSort -->
+      <class name="com.vmo.nopcommerce.features.hompage.ProductionSearchSuccessfully">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vmo.nopcommerce.features.hompage.ProductionSearchSuccessfully@4f4c789f]" started-at="2023-09-22T11:09:37 ICT" name="setup" finished-at="2023-09-22T11:09:38 ICT" duration-ms="1221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC02_ProductSearch()[pri:0, instance:com.vmo.nopcommerce.features.hompage.ProductionSearchSuccessfully@4f4c789f]" started-at="2023-09-22T11:09:38 ICT" name="TC02_ProductSearch" finished-at="2023-09-22T11:09:41 ICT" duration-ms="2476" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02_ProductSearch -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vmo.nopcommerce.features.hompage.ProductionSearchSuccessfully@4f4c789f]" started-at="2023-09-22T11:09:41 ICT" name="tearDown" finished-at="2023-09-22T11:09:42 ICT" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vmo.nopcommerce.features.hompage.ProductionSearchSuccessfully -->
+      <class name="com.vmo.nopcommerce.features.register.RegisterSuccessfully">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vmo.nopcommerce.features.register.RegisterSuccessfully@7048535f]" started-at="2023-09-22T11:10:01 ICT" name="setup" finished-at="2023-09-22T11:10:02 ICT" duration-ms="1048" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC01_User_registration()[pri:0, instance:com.vmo.nopcommerce.features.register.RegisterSuccessfully@7048535f]" started-at="2023-09-22T11:10:02 ICT" name="TC01_User_registration" finished-at="2023-09-22T11:10:05 ICT" duration-ms="3821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01_User_registration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vmo.nopcommerce.features.register.RegisterSuccessfully@7048535f]" started-at="2023-09-22T11:10:06 ICT" name="tearDown" finished-at="2023-09-22T11:10:06 ICT" duration-ms="724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vmo.nopcommerce.features.register.RegisterSuccessfully -->
+      <class name="com.vmo.nopcommerce.features.hompage.SocialMedia">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.vmo.nopcommerce.features.hompage.SocialMedia@1b7cae6f]" started-at="2023-09-22T11:09:46 ICT" name="setup" finished-at="2023-09-22T11:09:47 ICT" duration-ms="1137" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CHROME]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="TC07_CheckselecctSocialMedia()[pri:0, instance:com.vmo.nopcommerce.features.hompage.SocialMedia@1b7cae6f]" started-at="2023-09-22T11:09:47 ICT" name="TC07_CheckselecctSocialMedia" finished-at="2023-09-22T11:09:50 ICT" duration-ms="2601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC07_CheckselecctSocialMedia -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.vmo.nopcommerce.features.hompage.SocialMedia@1b7cae6f]" started-at="2023-09-22T11:09:50 ICT" name="tearDown" finished-at="2023-09-22T11:09:51 ICT" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.vmo.nopcommerce.features.hompage.SocialMedia -->
+    </test> <!-- C:/vmo_auto_fresher/src/test/java/com/vmo/nopcommerce/features/hompage/ChangeCurrency.java -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
