@@ -1,32 +1,52 @@
 package com.vmo.nopcommerce.features.login;
 
-import com.vmo.nopcommerce.common.BasePage;
 import com.vmo.nopcommerce.common.BaseTest;
-import com.vmo.nopcommerce.pageobject.HomePageObject;
 import com.vmo.nopcommerce.pageobject.LoginPageObject;
+import com.vmo.nopcommerce.pageobject.PageGenerator;
+import com.vmo.nopcommerce.utils.ExcelUtil;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
+
+
+@Epic("Nopcommerce")
+@Feature("LoginPageObject")
+@Story("LoginSuccessfully")
 
 public class LoginSuccessfully extends BaseTest {
-    private WebDriver driver;
-    private LoginPageObject loginpage;
-    private HomePageObject homepage;
+    WebDriver driver;
+    private LoginPageObject login;
+    ExcelUtil excelUtil = new ExcelUtil();
 
+    @DataProvider(name = "dataLogin")
+    public Object[][] dataTest() {
+        return excelUtil.data();
+    }
+
+    @Parameters("browser")
     @BeforeMethod
-    public void setup() {
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        loginpage = new LoginPageObject(driver);
+    public void setup(@Optional("CHROME") String browser){
+        driver = getDriverBrowser(browser);
+        login = PageGenerator.getLoginObject(driver);
+        excelUtil.setExcelFileSheet("data");
     }
 
-    @Test
-    public void Login_01_Loginsuccessfully(){
+
+
+    @Test(dataProvider ="dataLogin")
+    public void Login_01_Loginsuccessfully (String userName, String passWord) {
+        login.gotoURL("https://www.saucedemo.com/");
+        login.verifyTitle("Swag Labs");
+        login.inputUserName(userName);
+        login.inputPassWord(passWord);
+        login.clickBtnLogin();
+
+
 
     }
-
 
 
     @AfterMethod(alwaysRun = true)

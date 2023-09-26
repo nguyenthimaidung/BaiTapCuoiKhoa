@@ -1,10 +1,6 @@
 package com.vmo.nopcommerce.features.register;
 
-import com.vmo.nopcommerce.common.BasePage;
 import com.vmo.nopcommerce.common.BaseTest;
-import com.vmo.nopcommerce.helper.Log;
-import com.vmo.nopcommerce.interfaces.RegisterUI;
-import com.vmo.nopcommerce.pageobject.LoginPageObject;
 import com.vmo.nopcommerce.pageobject.PageGenerator;
 import com.vmo.nopcommerce.pageobject.RegisterPageObject;
 import com.vmo.nopcommerce.utils.RegisterData;
@@ -12,8 +8,6 @@ import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;

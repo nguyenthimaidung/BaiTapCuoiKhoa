@@ -1,6 +1,7 @@
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\pageobject\RegisterPageObject.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\common\BagePage2.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\common\GlobalConstants.java
+C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\interfaces\LoginPageUI.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\factoryBrowser\ChromeDriverManager.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\utils\NewPageData.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\pageobject\NewPageObject.java
@@ -20,7 +21,9 @@ C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\interfaces\RegisterUI.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\common\BaseTest.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\pageobject\LoginPageObject.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\helper\TestNGListener.java
+C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\utils\ExcelUtil.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\pageobject\PasswordRecoveryObject.java
+C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\utils\DataUtils.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\utils\RegisterData.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\factoryBrowser\BrowserFactory.java
 C:\vmo_auto_fresher\src\main\java\com\vmo\nopcommerce\pageobject\HomePageObject.java

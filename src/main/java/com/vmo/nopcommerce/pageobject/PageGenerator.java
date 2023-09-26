@@ -16,6 +16,9 @@ public class PageGenerator {
     public static RegisterPageObject getRegisterPageObject(WebDriver driver){
         return new RegisterPageObject(driver);
     }
+    public static LoginPageObject getLoginObject(WebDriver driver){
+        return new LoginPageObject(driver);
+    }
 
     public static NewPageObject getNewPageObject(WebDriver driver){
         return new NewPageObject(driver);

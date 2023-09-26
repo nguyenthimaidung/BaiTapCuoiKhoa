@@ -7,8 +7,10 @@ com\vmo\nopcommerce\factoryBrowser\ChromeHeadlessDriverManager.class
 com\vmo\nopcommerce\factoryBrowser\FirefoxDriverManager.class
 com\vmo\nopcommerce\interfaces\HomePageUI.class
 com\vmo\nopcommerce\common\BasePage$3.class
+com\vmo\nopcommerce\utils\ExcelUtil.class
 org\example\Main.class
 com\vmo\nopcommerce\pageobject\PasswordRecoveryObject.class
+com\vmo\nopcommerce\utils\DataUtils.class
 com\vmo\nopcommerce\interfaces\NewPageUI.class
 com\vmo\nopcommerce\FactoryEnviroment\LocalFactory.class
 com\vmo\nopcommerce\pageobject\PageGenerator.class
@@ -31,3 +33,4 @@ com\vmo\nopcommerce\interfaces\PasswordRecoveryUI.class
 com\vmo\nopcommerce\helper\TestNGListener.class
 com\vmo\nopcommerce\helper\Log.class
 com\vmo\nopcommerce\common\BasePage$2.class
+com\vmo\nopcommerce\interfaces\LoginPageUI.class

@@ -48,7 +48,9 @@ public class TestNGListener implements ITestListener {
         Object testClass = result.getInstance();
         WebDriver webDriver = ((BaseTest) testClass).getDriver();
         saveScreenShot(webDriver);
+
     }
+
 
 
 }
