@@ -206,7 +206,9 @@ public class BasePage {
     protected boolean isElementEnabled(WebDriver driver, String locator){
         return this.getWebElement(driver,locator).isEnabled();
     }
-    protected void clearData( WebDriver driver, String locator){
+    protected void clearData( WebDriver driver, String locator)
+
+    {
          this.getWebElement(driver,locator).clear();
     }
      protected void  clickElement( WebDriver driver, String locator){

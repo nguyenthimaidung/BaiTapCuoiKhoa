@@ -27,6 +27,7 @@ public class LoginPageObject extends BaseTest {
         sendKeyToElement(driver, LoginPageUI.TXT_PASSWORD,value);
         Log.allure("Input password success");
     };
+
     public void clickBtnLogin(){
         clickElement(driver, LoginPageUI.BTN_LOGIN);
         Log.allure("Login success");

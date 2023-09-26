@@ -10,27 +10,35 @@ import org.openqa.selenium.Platform;
 import org.testng.annotations.DataProvider;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ExcelUtil {
     public static final String testDataExcelFileName = "Testdata.xlsx";
     public static String testDataExcelPath = null; //Location of Test data excel file
-    private  XSSFWorkbook excelWBook; //Excel WorkBook
-    private  XSSFSheet excelWSheet; //Excel Sheet
+    private  static XSSFWorkbook excelWBook; //Excel WorkBook
+    public static   XSSFSheet excelWSheet; //Excel Sheet
     private static XSSFCell cell; //Excel cell
     private static XSSFRow row; //Excel row
     public static int rowNumber; //Row Number
     public static int columnNumber; //Column Number
+    private Map<String, Integer> columns = new HashMap<>();
 
     // This method has two parameters: "Test data excel file name" and "Excel sheet name"
     // It creates FileInputStream and set excel file and excel sheet to excelWBook and excelWSheet variables.
     @SneakyThrows
-    public void setExcelFileSheet(String sheetName) {
+    public void setExcelFileSheet(String sheetName) throws IOException {
         testDataExcelPath = "src/test/resources/";
         // Open the Excel file
         FileInputStream ExcelFile = new FileInputStream(testDataExcelPath + testDataExcelFileName);
         excelWBook = new XSSFWorkbook(ExcelFile);
         excelWSheet = excelWBook.getSheet(sheetName);
+        excelWSheet.getRow(0).forEach(cell ->{
+            columns.put(cell.getStringCellValue(), cell.getColumnIndex());
+        });
     }
 
     //This method reads the test data from the Excel cell.
@@ -39,6 +47,9 @@ public class ExcelUtil {
         cell = excelWSheet.getRow(RowNum).getCell(ColNum);
         DataFormatter formatter = new DataFormatter();
         return formatter.formatCellValue(cell);
+    }
+    public String getCellData(String columnName, int rownum) {
+        return getCellData(rownum, columns.get(columnName));
     }
 
     //This method takes row number as a parameter and returns the data of given row number.
@@ -50,7 +61,7 @@ public class ExcelUtil {
 
     //This method gets excel file, row and column number and set a value to the that cell.
     @SneakyThrows
-    public void setCellData(String value, int RowNum, int ColNum) {
+    public void setCellData(String value, int RowNum, int ColNum) throws IOException {
         row = excelWSheet.getRow(RowNum);
         cell = row.getCell(ColNum);
         if (cell == null) {

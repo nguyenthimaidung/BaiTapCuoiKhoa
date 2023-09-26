@@ -10,6 +10,9 @@ import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 
+import java.io.IOException;
+
+import static com.vmo.nopcommerce.utils.ExcelUtil.excelWSheet;
 
 
 @Epic("Nopcommerce")
@@ -21,32 +24,33 @@ public class LoginSuccessfully extends BaseTest {
     private LoginPageObject login;
     ExcelUtil excelUtil = new ExcelUtil();
 
-    @DataProvider(name = "dataLogin")
-    public Object[][] dataTest() {
-        return excelUtil.data();
-    }
 
     @Parameters("browser")
     @BeforeMethod
-    public void setup(@Optional("CHROME") String browser){
+    public void setup(@Optional("CHROME") String browser) throws IOException {
         driver = getDriverBrowser(browser);
         login = PageGenerator.getLoginObject(driver);
         excelUtil.setExcelFileSheet("data");
     }
+    @Test(dataProvider = "dataLogin")
+    public void Login_01_Loginsuccessfully (String userName, String passWord) throws Exception {
+        int rowCount = excelWSheet.getLastRowNum();
+        System.out.println(rowCount);
 
-
-
-    @Test(dataProvider ="dataLogin")
-    public void Login_01_Loginsuccessfully (String userName, String passWord) {
         login.gotoURL("https://www.saucedemo.com/");
         login.verifyTitle("Swag Labs");
-        login.inputUserName(userName);
-        login.inputPassWord(passWord);
-        login.clickBtnLogin();
+        for (int i=1; i<=rowCount; i++){
+                login.inputUserName(excelUtil.getCellData("Username",i));
+                login.inputPassWord(excelUtil.getCellData("Password",i));
+                Thread.sleep(1000);
+
+            }
+        }
 
 
 
-    }
+
+
 
 
     @AfterMethod(alwaysRun = true)
