@@ -34,6 +34,7 @@ public class LoginSuccessfully extends BaseTest {
     }
     @Test()
     public void Login_01_Loginsuccessfully () throws Exception {
+
         int rowCount = excelWSheet.getLastRowNum();
         System.out.println(rowCount);
 
@@ -43,17 +44,10 @@ public class LoginSuccessfully extends BaseTest {
                 login.inputUserName(excelUtil.getCellData("Username",i));
                 login.inputPassWord(excelUtil.getCellData("Password",i));
                 Thread.sleep(1000);
+                login.clickBtnLogin();
 
             }
-
         }
-
-
-
-
-
-
-
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         driver.quit();
