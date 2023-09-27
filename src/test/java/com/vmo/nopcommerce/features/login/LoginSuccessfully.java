@@ -32,8 +32,8 @@ public class LoginSuccessfully extends BaseTest {
         login = PageGenerator.getLoginObject(driver);
         excelUtil.setExcelFileSheet("data");
     }
-    @Test(dataProvider = "dataLogin")
-    public void Login_01_Loginsuccessfully (String userName, String passWord) throws Exception {
+    @Test()
+    public void Login_01_Loginsuccessfully () throws Exception {
         int rowCount = excelWSheet.getLastRowNum();
         System.out.println(rowCount);
 
@@ -45,6 +45,7 @@ public class LoginSuccessfully extends BaseTest {
                 Thread.sleep(1000);
 
             }
+
         }
 
 

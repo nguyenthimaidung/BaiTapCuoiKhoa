@@ -19,8 +19,8 @@ import java.util.Map;
 public class ExcelUtil {
     public static final String testDataExcelFileName = "Testdata.xlsx";
     public static String testDataExcelPath = null; //Location of Test data excel file
-    private  static XSSFWorkbook excelWBook; //Excel WorkBook
-    public static   XSSFSheet excelWSheet; //Excel Sheet
+    private static XSSFWorkbook excelWBook; //Excel WorkBook
+    public static XSSFSheet excelWSheet; //Excel Sheet
     private static XSSFCell cell; //Excel cell
     private static XSSFRow row; //Excel row
     public static int rowNumber; //Row Number
@@ -29,14 +29,14 @@ public class ExcelUtil {
 
     // This method has two parameters: "Test data excel file name" and "Excel sheet name"
     // It creates FileInputStream and set excel file and excel sheet to excelWBook and excelWSheet variables.
-    @SneakyThrows
+
     public void setExcelFileSheet(String sheetName) throws IOException {
         testDataExcelPath = "src/test/resources/";
         // Open the Excel file
         FileInputStream ExcelFile = new FileInputStream(testDataExcelPath + testDataExcelFileName);
         excelWBook = new XSSFWorkbook(ExcelFile);
         excelWSheet = excelWBook.getSheet(sheetName);
-        excelWSheet.getRow(0).forEach(cell ->{
+        excelWSheet.getRow(0).forEach(cell -> {
             columns.put(cell.getStringCellValue(), cell.getColumnIndex());
         });
     }
@@ -48,6 +48,7 @@ public class ExcelUtil {
         DataFormatter formatter = new DataFormatter();
         return formatter.formatCellValue(cell);
     }
+
     public String getCellData(String columnName, int rownum) {
         return getCellData(rownum, columns.get(columnName));
     }
@@ -77,12 +78,12 @@ public class ExcelUtil {
         fileOut.close();
     }
 
-    public Object[][] data(){
+    public Object[][] data() {
         int rowCount = excelWSheet.getLastRowNum();
         int cellCount = excelWSheet.getRow(rowCount).getLastCellNum();
         Object[][] data1 = new Object[rowCount][cellCount];
-        for (int i=0; i<=rowCount; i++){
-            for (int j= 0; j<=cellCount; j++){
+        for (int i = 0; i <= rowCount; i++) {
+            for (int j = 0; j <= cellCount; j++) {
                 data1[i][j] = excelWSheet.getRow(i).getCell(j).getStringCellValue();
 
             }
