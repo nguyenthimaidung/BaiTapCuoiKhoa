@@ -1,15 +1,11 @@
-package com.vmo.nopcommerce.features.hompage;
+package com.vmo.nopcommerce.features.homepage;
 
 import com.vmo.nopcommerce.common.BaseTest;
-import com.vmo.nopcommerce.helper.Log;
-import com.vmo.nopcommerce.helper.TestNGListener;
 import com.vmo.nopcommerce.pageobject.HomePageObject;
-import com.vmo.nopcommerce.pageobject.PageGenerator;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
 //@Listeners(TestNGListener.class)
 

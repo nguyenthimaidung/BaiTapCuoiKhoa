@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" parallel = "tests" thread-count = "2">
     <parameter name="browser" value="CHROME"/>
     <test name="C:/vmo_auto_fresher/src/test/java/com/vmo/nopcommerce/features/hompage/ChangeCurrency.java">
         <classes>

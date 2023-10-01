@@ -22,7 +22,6 @@ public class BaseTest extends BasePage {
         if (runType.equals("grid")) {
             driver = new GirdFactory().createDrive(browser);
 
-
         } else {
             driver = new LocalFactory().createDrive(browser);
 
