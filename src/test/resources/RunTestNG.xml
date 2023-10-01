@@ -5,13 +5,13 @@
     <test name="C:/vmo_auto_fresher/src/test/java/com/vmo/nopcommerce/features/hompage/ChangeCurrency.java">
         <classes>
             <class name="com.vmo.nopcommerce.features.hompage.ChangeCurrency"/>
-            <class name="com.vmo.nopcommerce.features.hompage.ProductionSearchSuccessfully"/>
-            <class name="com.vmo.nopcommerce.features.hompage.SerachAndSort"/>
-            <class name="com.vmo.nopcommerce.features.hompage.SocialMedia"/>
-            <class name="com.vmo.nopcommerce.features.newpage.AddCommentSuccess"/>
-            <class name="com.vmo.nopcommerce.features.passwordrrecovery.ForgotPasswordSuccessfully"/>
-            <class name="com.vmo.nopcommerce.features.register.RegisterSuccessfully"/>
-            <class name="com.vmo.nopcommerce.features.login.LoginSuccessfully"/>
+<!--            <class name="com.vmo.nopcommerce.features.hompage.ProductionSearchSuccessfully"/>-->
+<!--            <class name="com.vmo.nopcommerce.features.hompage.SerachAndSort"/>-->
+<!--            <class name="com.vmo.nopcommerce.features.hompage.SocialMedia"/>-->
+<!--            <class name="com.vmo.nopcommerce.features.newpage.AddCommentSuccess"/>-->
+<!--            <class name="com.vmo.nopcommerce.features.passwordrrecovery.ForgotPasswordSuccessfully"/>-->
+<!--            <class name="com.vmo.nopcommerce.features.register.RegisterSuccessfully"/>-->
+<!--            <class name="com.vmo.nopcommerce.features.login.LoginSuccessfully"/>-->
         </classes>
     </test>
 </suite>

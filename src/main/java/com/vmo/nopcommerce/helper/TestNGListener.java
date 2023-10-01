@@ -38,8 +38,8 @@ public class TestNGListener implements ITestListener {
     }
 
     @Attachment()
-    public  static byte[] saveScreenShot(WebDriver driver){
-        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+    public  static void saveScreenShot(WebDriver driver){
+        ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 
     @Override

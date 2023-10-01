@@ -28,7 +28,7 @@ public class ChangeCurrency extends BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setup(String browser){
-        driver = getDriverBrowser(browser);
+        driver = getDriverBrowser(browser,"grid");
         homepage = new HomePageObject(driver);
     }
     @Test
@@ -40,6 +40,6 @@ public class ChangeCurrency extends BaseTest {
     }
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
-        cleanBrowserAndDriver();
+        driver.quit();
     }
 }

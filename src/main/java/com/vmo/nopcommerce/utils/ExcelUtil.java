@@ -1,12 +1,12 @@
 package com.vmo.nopcommerce.utils;
 
 import lombok.SneakyThrows;
+import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.Platform;
 import org.testng.annotations.DataProvider;
 
 import java.io.FileInputStream;
@@ -31,37 +31,62 @@ public class ExcelUtil {
     // It creates FileInputStream and set excel file and excel sheet to excelWBook and excelWSheet variables.
 
     public void setExcelFileSheet(String sheetName) throws IOException {
+
+            testDataExcelPath = "src/test/resources/";
+            FileInputStream ExcelFile = new FileInputStream(testDataExcelPath + testDataExcelFileName);
+            excelWBook = new XSSFWorkbook(ExcelFile);
+            excelWSheet = excelWBook.getSheet(sheetName);
+            excelWSheet.getRow(0).forEach(cell -> {
+                columns.put(cell.getStringCellValue(), cell.getColumnIndex());
+            });
+
+    }
+    public String getCellData(String sheetName,int RowNum, int ColNum) throws IOException {
         testDataExcelPath = "src/test/resources/";
-        // Open the Excel file
+        FileInputStream ExcelFile = new FileInputStream(testDataExcelPath + testDataExcelFileName);
+        excelWBook = new XSSFWorkbook(ExcelFile);
+        excelWSheet = excelWBook.getSheet(sheetName);
+        cell = excelWSheet.getRow(RowNum).getCell(ColNum);
+        DataFormatter formatter = new DataFormatter();
+        return formatter.formatCellValue(cell);
+    }
+
+    public String getCellData(String sheetName,String columnName, int rownum) throws IOException {
+        testDataExcelPath = "src/test/resources/";
         FileInputStream ExcelFile = new FileInputStream(testDataExcelPath + testDataExcelFileName);
         excelWBook = new XSSFWorkbook(ExcelFile);
         excelWSheet = excelWBook.getSheet(sheetName);
         excelWSheet.getRow(0).forEach(cell -> {
             columns.put(cell.getStringCellValue(), cell.getColumnIndex());
         });
+        return getCellData(sheetName,rownum, columns.get(columnName));
     }
 
-    //This method reads the test data from the Excel cell.
-    //We are passing row number and column number as parameters.
-    public String getCellData(int RowNum, int ColNum) {
-        cell = excelWSheet.getRow(RowNum).getCell(ColNum);
-        DataFormatter formatter = new DataFormatter();
-        return formatter.formatCellValue(cell);
+    public int getRowCount(String sheetName) throws IOException {
+
+        testDataExcelPath = "src/test/resources/";
+        FileInputStream ExcelFile = new FileInputStream(testDataExcelPath + testDataExcelFileName);
+        excelWBook = new XSSFWorkbook(ExcelFile);
+        excelWSheet = excelWBook.getSheet(sheetName);
+        int rowCount = excelWSheet.getLastRowNum();
+        excelWBook.close();
+        ExcelFile.close();
+        return rowCount;
     }
 
-    public String getCellData(String columnName, int rownum) {
-        return getCellData(rownum, columns.get(columnName));
+    public int getCellCount(String sheetName , int rownum) throws IOException {
+        testDataExcelPath = "src/test/resources/";
+        FileInputStream ExcelFile = new FileInputStream(testDataExcelPath + testDataExcelFileName);
+        excelWBook = new XSSFWorkbook(ExcelFile);
+        excelWSheet = excelWBook.getSheet(sheetName);
+        row = excelWSheet.getRow(rownum);
+        int cellRow = row.getLastCellNum();
+        excelWBook.close();
+        ExcelFile.close();
+        return cellRow;
     }
 
-    //This method takes row number as a parameter and returns the data of given row number.
-    public XSSFRow getRowData(int RowNum) {
-        row = excelWSheet.getRow(RowNum);
-        return row;
-    }
 
-
-    //This method gets excel file, row and column number and set a value to the that cell.
-    @SneakyThrows
     public void setCellData(String value, int RowNum, int ColNum) throws IOException {
         row = excelWSheet.getRow(RowNum);
         cell = row.getCell(ColNum);
@@ -71,23 +96,24 @@ public class ExcelUtil {
         } else {
             cell.setCellValue(value);
         }
-        // Constant variables Test Data path and Test Data file name
         FileOutputStream fileOut = new FileOutputStream(testDataExcelPath + testDataExcelFileName);
         excelWBook.write(fileOut);
         fileOut.flush();
         fileOut.close();
     }
-
-    public Object[][] data() {
-        int rowCount = excelWSheet.getLastRowNum();
-        int cellCount = excelWSheet.getRow(rowCount).getLastCellNum();
-        Object[][] data1 = new Object[rowCount][cellCount];
-        for (int i = 0; i <= rowCount; i++) {
-            for (int j = 0; j <= cellCount; j++) {
-                data1[i][j] = excelWSheet.getRow(i).getCell(j).getStringCellValue();
+    public String[][] data(String sheetName) throws EncryptedDocumentException, IOException {
+        int rowCount = getRowCount(sheetName);
+        int cellCount = getCellCount(sheetName,1);
+        String loginData[][] = new String[rowCount][cellCount];
+        for (int i = 1; i <= rowCount; i++) {
+            for (int j = 1; j <= cellCount; j++) {
+                getCellData(sheetName,i ,j);
 
             }
+
         }
-        return data1;
+        return loginData;
     }
+
+
 }

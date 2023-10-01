@@ -1,5 +1,6 @@
 package com.vmo.nopcommerce.common;
 
+import com.vmo.nopcommerce.FactoryEnviroment.GirdFactory;
 import com.vmo.nopcommerce.FactoryEnviroment.LocalFactory;
 import com.vmo.nopcommerce.helper.TestNGListener;
 import org.openqa.selenium.WebDriver;
@@ -15,16 +16,27 @@ import java.time.Duration;
 @Listeners(TestNGListener.class)
 
 public class BaseTest extends BasePage {
-    private  WebDriver driver;
-    public WebDriver getDriverBrowser(String browser){
-        driver = new LocalFactory().createDrive(browser);
+    private WebDriver driver;
+
+    public WebDriver getDriverBrowser(String browser, String runType) {
+        if (runType.equals("grid")) {
+            driver = new GirdFactory().createDrive(browser);
+
+
+        } else {
+            driver = new LocalFactory().createDrive(browser);
+
+        }
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(GlobalConstants.LONG_TIMEOUT));
         return driver;
+
     }
+
     public WebDriver getDriver() {
         return this.driver;
     }
+
     protected void cleanBrowserAndDriver() {
         String cmd = "";
         try {
