@@ -35,7 +35,7 @@ public class LoginSuccessfully extends BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setup(@Optional("CHROME") String browser) throws IOException {
-        driver = getDriverBrowser(browser,"local");
+        driver = getDriverBrowser(browser,"grid");
         login = PageGenerator.getLoginObject(driver);
         //excelUtil.setExcelFileSheet("data");
     }
