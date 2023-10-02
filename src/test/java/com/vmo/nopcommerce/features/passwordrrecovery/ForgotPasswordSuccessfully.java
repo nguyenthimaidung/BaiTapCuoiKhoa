@@ -27,7 +27,7 @@ public class ForgotPasswordSuccessfully extends BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setup(String browser){
-        driver = getDriverBrowser(browser,"grid");
+        driver = getDriverBrowser(browser,"local");
         forgot = PageGenerator.getPasswordRecoveryObject(driver);
     }
     @Test
