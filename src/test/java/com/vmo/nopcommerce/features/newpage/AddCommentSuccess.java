@@ -28,7 +28,7 @@ public class AddCommentSuccess extends BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setup(String browser){
-        driver = getDriverBrowser(browser,"grid");
+        driver = getDriverBrowser(browser,"local");
         newpage = PageGenerator.getNewPageObject(driver);
     }
     @Test
