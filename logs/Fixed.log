@@ -1295,3 +1295,86 @@
 [27-09-2023 23:47:02.617 INFO] - ---------- Login_01_loginSuccessfully FAILED test ----------
 [28-09-2023 16:18:27.096 INFO] - ---------- Login_01_loginSuccessfully FAILED test ----------
 [29-09-2023 12:36:33.310 INFO] - ---------- Login_01_loginSuccessfully FAILED test ----------
+[02-10-2023 10:23:17.659 INFO] - Open correct page
+[02-10-2023 10:23:19.065 INFO] - Select Currency Successfully
+[02-10-2023 10:23:19.110 INFO] - Currency displayed correct
+[02-10-2023 10:23:19.295 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[02-10-2023 10:24:17.516 INFO] - Open correct page
+[02-10-2023 10:24:18.754 INFO] - Select Currency Successfully
+[02-10-2023 10:24:18.788 INFO] - Currency displayed correct
+[02-10-2023 10:24:18.911 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[02-10-2023 10:24:23.011 INFO] - Open correct page
+[02-10-2023 10:24:23.122 INFO] - Input data search success
+[02-10-2023 10:24:24.358 INFO] - Product displayed the same data input
+[02-10-2023 10:24:24.359 INFO] - ---------- TC02_ProductSearch Success test ----------
+[02-10-2023 10:24:28.076 INFO] - Open correct page
+[02-10-2023 10:24:30.152 INFO] - Displayed screen software
+[02-10-2023 10:24:30.311 INFO] - List product displayed Z -> A
+[02-10-2023 10:24:30.312 INFO] - ---------- TC03_ProductSearchAndSort Success test ----------
+[02-10-2023 10:24:33.507 INFO] - Open correct page
+[02-10-2023 10:24:33.589 INFO] - Open page facebook
+[02-10-2023 10:24:35.002 INFO] - Switch to page facebook success
+[02-10-2023 10:24:35.003 INFO] - ---------- TC07_CheckselecctSocialMedia Success test ----------
+[02-10-2023 10:24:39.016 INFO] - Open correct page
+[02-10-2023 10:24:40.054 INFO] - Displayed screen detail
+[02-10-2023 10:24:40.849 INFO] - Add comment success
+[02-10-2023 10:24:40.965 INFO] - Displayed correct text after add cmt
+[02-10-2023 10:24:40.966 INFO] - ---------- TC05_AddComment Success test ----------
+[02-10-2023 10:24:41.816 INFO] - Close dirver success
+[02-10-2023 10:24:44.857 INFO] - Open correct page
+[02-10-2023 10:24:45.821 INFO] - Open screen login
+[02-10-2023 10:24:45.828 INFO] - Open correct page
+[02-10-2023 10:24:46.210 INFO] - Open screen forgot password
+[02-10-2023 10:24:46.215 INFO] - Open correct page
+[02-10-2023 10:24:46.308 INFO] - Input email successfully
+[02-10-2023 10:24:46.739 INFO] - Forgot password success
+[02-10-2023 10:24:46.762 INFO] - Displayed correct message after forgot password 
+[02-10-2023 10:24:46.763 INFO] - ---------- TC04_ForgotPassword Success test ----------
+[02-10-2023 10:24:49.978 INFO] - Open correct page
+[02-10-2023 10:24:50.457 INFO] - Open screen register success
+[02-10-2023 10:24:50.502 INFO] - Open correct screen Register
+[02-10-2023 10:24:50.850 INFO] - Input firstname success
+[02-10-2023 10:24:50.956 INFO] - Input lastname success
+[02-10-2023 10:24:51.082 INFO] - Input email success
+[02-10-2023 10:24:51.192 INFO] - Input password success
+[02-10-2023 10:24:51.263 INFO] - Input confirm password success
+[02-10-2023 10:24:51.936 INFO] - Register success
+[02-10-2023 10:24:51.958 INFO] - Displayed correct message after register
+[02-10-2023 10:24:51.959 INFO] - ---------- TC01_User_registration Success test ----------
+[02-10-2023 10:24:54.273 INFO] - ---------- Login_01_loginSuccessfully FAILED test ----------
+[02-10-2023 10:50:41.561 INFO] - ---------- Login_01_loginSuccessfully FAILED test ----------
+[04-10-2023 14:57:02.213 INFO] - Open correct page
+[04-10-2023 14:57:02.394 INFO] - Input email success
+[04-10-2023 14:57:02.499 INFO] - Input password success
+[04-10-2023 14:57:02.561 INFO] - Login success
+[04-10-2023 14:57:02.566 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[04-10-2023 14:57:05.553 INFO] - Open correct page
+[04-10-2023 14:57:05.668 INFO] - Input email success
+[04-10-2023 14:57:05.791 INFO] - Input password success
+[04-10-2023 14:57:05.849 INFO] - Login success
+[04-10-2023 14:57:05.850 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[04-10-2023 14:57:08.128 INFO] - Open correct page
+[04-10-2023 14:57:08.277 INFO] - Input email success
+[04-10-2023 14:57:08.359 INFO] - Input password success
+[04-10-2023 14:57:08.427 INFO] - Login success
+[04-10-2023 14:57:08.427 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[04-10-2023 14:57:10.679 INFO] - Open correct page
+[04-10-2023 14:57:10.814 INFO] - Input email success
+[04-10-2023 14:57:10.920 INFO] - Input password success
+[04-10-2023 14:57:10.987 INFO] - Login success
+[04-10-2023 14:57:10.988 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[04-10-2023 14:57:13.393 INFO] - Open correct page
+[04-10-2023 14:57:13.530 INFO] - Input email success
+[04-10-2023 14:57:13.621 INFO] - Input password success
+[04-10-2023 14:57:13.678 INFO] - Login success
+[04-10-2023 14:57:13.678 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[04-10-2023 14:57:15.974 INFO] - Open correct page
+[04-10-2023 14:57:16.121 INFO] - Input email success
+[04-10-2023 14:57:16.239 INFO] - Input password success
+[04-10-2023 14:57:16.291 INFO] - Login success
+[04-10-2023 14:57:16.291 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[04-10-2023 14:57:18.636 INFO] - Open correct page
+[04-10-2023 14:57:18.768 INFO] - Input email success
+[04-10-2023 14:57:18.873 INFO] - Input password success
+[04-10-2023 14:57:18.970 INFO] - Login success
+[04-10-2023 14:57:18.971 INFO] - ---------- Login_01_loginSuccessfully Success test ----------

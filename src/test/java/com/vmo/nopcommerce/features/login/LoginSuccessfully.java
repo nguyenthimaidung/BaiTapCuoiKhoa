@@ -40,7 +40,7 @@ public class LoginSuccessfully extends BaseTest {
         //excelUtil.setExcelFileSheet("data");
     }
     @Test(dataProvider = "dataLogin")
-    public void Login_01_loginSuccessfully (String userName, String passWord) {
+    public void Login_01_loginSuccessfully (String STT, String userName, String passWord) {
         login.gotoURL("https://www.saucedemo.com/");
         login.verifyTitle("Swag Labs");
         login.inputUserName(userName);
@@ -49,6 +49,6 @@ public class LoginSuccessfully extends BaseTest {
         }
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
-        driver.quit();
+        cleanBrowserAndDriver();
     }
 }

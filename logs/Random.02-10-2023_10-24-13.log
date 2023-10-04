@@ -1,0 +1,43 @@
+[02-10-2023 10:24:17.516 INFO] - Open correct page
+[02-10-2023 10:24:18.754 INFO] - Select Currency Successfully
+[02-10-2023 10:24:18.788 INFO] - Currency displayed correct
+[02-10-2023 10:24:18.911 INFO] - ---------- TC06_ChangeCurrency Success test ----------
+[02-10-2023 10:24:23.011 INFO] - Open correct page
+[02-10-2023 10:24:23.122 INFO] - Input data search success
+[02-10-2023 10:24:24.358 INFO] - Product displayed the same data input
+[02-10-2023 10:24:24.359 INFO] - ---------- TC02_ProductSearch Success test ----------
+[02-10-2023 10:24:28.076 INFO] - Open correct page
+[02-10-2023 10:24:30.152 INFO] - Displayed screen software
+[02-10-2023 10:24:30.311 INFO] - List product displayed Z -> A
+[02-10-2023 10:24:30.312 INFO] - ---------- TC03_ProductSearchAndSort Success test ----------
+[02-10-2023 10:24:33.507 INFO] - Open correct page
+[02-10-2023 10:24:33.589 INFO] - Open page facebook
+[02-10-2023 10:24:35.002 INFO] - Switch to page facebook success
+[02-10-2023 10:24:35.003 INFO] - ---------- TC07_CheckselecctSocialMedia Success test ----------
+[02-10-2023 10:24:39.016 INFO] - Open correct page
+[02-10-2023 10:24:40.054 INFO] - Displayed screen detail
+[02-10-2023 10:24:40.849 INFO] - Add comment success
+[02-10-2023 10:24:40.965 INFO] - Displayed correct text after add cmt
+[02-10-2023 10:24:40.966 INFO] - ---------- TC05_AddComment Success test ----------
+[02-10-2023 10:24:41.816 INFO] - Close dirver success
+[02-10-2023 10:24:44.857 INFO] - Open correct page
+[02-10-2023 10:24:45.821 INFO] - Open screen login
+[02-10-2023 10:24:45.828 INFO] - Open correct page
+[02-10-2023 10:24:46.210 INFO] - Open screen forgot password
+[02-10-2023 10:24:46.215 INFO] - Open correct page
+[02-10-2023 10:24:46.308 INFO] - Input email successfully
+[02-10-2023 10:24:46.739 INFO] - Forgot password success
+[02-10-2023 10:24:46.762 INFO] - Displayed correct message after forgot password 
+[02-10-2023 10:24:46.763 INFO] - ---------- TC04_ForgotPassword Success test ----------
+[02-10-2023 10:24:49.978 INFO] - Open correct page
+[02-10-2023 10:24:50.457 INFO] - Open screen register success
+[02-10-2023 10:24:50.502 INFO] - Open correct screen Register
+[02-10-2023 10:24:50.850 INFO] - Input firstname success
+[02-10-2023 10:24:50.956 INFO] - Input lastname success
+[02-10-2023 10:24:51.082 INFO] - Input email success
+[02-10-2023 10:24:51.192 INFO] - Input password success
+[02-10-2023 10:24:51.263 INFO] - Input confirm password success
+[02-10-2023 10:24:51.936 INFO] - Register success
+[02-10-2023 10:24:51.958 INFO] - Displayed correct message after register
+[02-10-2023 10:24:51.959 INFO] - ---------- TC01_User_registration Success test ----------
+[02-10-2023 10:24:54.273 INFO] - ---------- Login_01_loginSuccessfully FAILED test ----------

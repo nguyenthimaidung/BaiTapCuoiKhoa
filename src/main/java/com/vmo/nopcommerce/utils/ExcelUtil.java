@@ -1,16 +1,13 @@
 package com.vmo.nopcommerce.utils;
 
-import lombok.SneakyThrows;
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.testng.annotations.DataProvider;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.HashMap;
@@ -41,7 +38,7 @@ public class ExcelUtil {
             });
 
     }
-    public String getCellData(String sheetName,int RowNum, int ColNum) throws IOException {
+    public String getCellData(String sheetName, int RowNum, int ColNum) throws IOException {
         testDataExcelPath = "src/test/resources/";
         FileInputStream ExcelFile = new FileInputStream(testDataExcelPath + testDataExcelFileName);
         excelWBook = new XSSFWorkbook(ExcelFile);
@@ -104,11 +101,10 @@ public class ExcelUtil {
     public String[][] data(String sheetName) throws EncryptedDocumentException, IOException {
         int rowCount = getRowCount(sheetName);
         int cellCount = getCellCount(sheetName,1);
-        String loginData[][] = new String[rowCount][cellCount];
+        String[][] loginData = new String[rowCount][cellCount];
         for (int i = 1; i <= rowCount; i++) {
-            for (int j = 1; j <= cellCount; j++) {
-                getCellData(sheetName,i ,j);
-
+            for (int j = 1; j < cellCount; j++) {
+                 loginData[i-1][j]= getCellData(sheetName,i,j);
             }
 
         }

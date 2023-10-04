@@ -25,7 +25,7 @@ public class RegisterSuccessfully extends BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setup(String browser){
-        driver = getDriverBrowser(browser,"local");
+        driver = getDriverBrowser(browser,"grid");
         register = PageGenerator.getRegisterPageObject(driver);
     }
 

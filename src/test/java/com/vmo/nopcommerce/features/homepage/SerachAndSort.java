@@ -23,7 +23,7 @@ public class SerachAndSort extends BaseTest {
     @Parameters("browser")
     @BeforeMethod
     public void setup(String browser){
-        driver = getDriverBrowser(browser,"local");
+        driver = getDriverBrowser(browser,"grid");
         productsearch = PageGenerator.getHomePageObject(driver);
     }
     @Test
