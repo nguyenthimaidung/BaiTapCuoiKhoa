@@ -1428,3 +1428,73 @@
 [02-10-2023 11:05:41.367 INFO] - ---------- TC01_User_registration Success test ----------
 [02-10-2023 11:05:47.308 INFO] - ---------- Login_01_loginSuccessfully FAILED test ----------
 >>>>>>> 578e495255addf0b422571fd2140b64f85ad1668
+[05-10-2023 20:15:28.751 INFO] - Open correct page
+[05-10-2023 20:15:29.272 INFO] - Input email success
+[05-10-2023 20:15:29.466 INFO] - Input password success
+[05-10-2023 20:15:29.611 INFO] - Login success
+[05-10-2023 20:15:29.626 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:15:37.198 INFO] - Open correct page
+[05-10-2023 20:15:37.458 INFO] - Input email success
+[05-10-2023 20:15:37.788 INFO] - Input password success
+[05-10-2023 20:15:37.904 INFO] - Login success
+[05-10-2023 20:15:37.905 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:15:43.158 INFO] - Open correct page
+[05-10-2023 20:15:43.435 INFO] - Input email success
+[05-10-2023 20:15:43.593 INFO] - Input password success
+[05-10-2023 20:15:43.721 INFO] - Login success
+[05-10-2023 20:15:43.722 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:15:49.098 INFO] - Open correct page
+[05-10-2023 20:15:49.329 INFO] - Input email success
+[05-10-2023 20:15:49.486 INFO] - Input password success
+[05-10-2023 20:15:49.605 INFO] - Login success
+[05-10-2023 20:15:49.606 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:15:54.835 INFO] - Open correct page
+[05-10-2023 20:15:55.127 INFO] - Input email success
+[05-10-2023 20:15:55.301 INFO] - Input password success
+[05-10-2023 20:15:55.425 INFO] - Login success
+[05-10-2023 20:15:55.426 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:16:00.195 INFO] - Open correct page
+[05-10-2023 20:16:00.449 INFO] - Input email success
+[05-10-2023 20:16:00.644 INFO] - Input password success
+[05-10-2023 20:16:00.754 INFO] - Login success
+[05-10-2023 20:16:00.755 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:16:06.011 INFO] - Open correct page
+[05-10-2023 20:16:06.292 INFO] - Input email success
+[05-10-2023 20:16:06.478 INFO] - Input password success
+[05-10-2023 20:16:06.696 INFO] - Login success
+[05-10-2023 20:16:06.698 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:26:22.102 INFO] - Open correct page
+[05-10-2023 20:26:24.364 INFO] - Input email success
+[05-10-2023 20:26:25.042 INFO] - Input password success
+[05-10-2023 20:26:25.848 INFO] - Login success
+[05-10-2023 20:26:25.862 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:26:38.937 INFO] - Open correct page
+[05-10-2023 20:26:39.524 INFO] - Input email success
+[05-10-2023 20:26:39.814 INFO] - Input password success
+[05-10-2023 20:26:40.244 INFO] - Login success
+[05-10-2023 20:26:40.247 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:26:47.184 INFO] - Open correct page
+[05-10-2023 20:26:47.785 INFO] - Input email success
+[05-10-2023 20:26:48.011 INFO] - Input password success
+[05-10-2023 20:26:48.461 INFO] - Login success
+[05-10-2023 20:26:48.462 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:26:55.682 INFO] - Open correct page
+[05-10-2023 20:26:56.245 INFO] - Input email success
+[05-10-2023 20:26:56.412 INFO] - Input password success
+[05-10-2023 20:26:56.732 INFO] - Login success
+[05-10-2023 20:26:56.741 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:27:03.036 INFO] - Open correct page
+[05-10-2023 20:27:03.666 INFO] - Input email success
+[05-10-2023 20:27:03.914 INFO] - Input password success
+[05-10-2023 20:27:04.195 INFO] - Login success
+[05-10-2023 20:27:04.196 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:27:10.129 INFO] - Open correct page
+[05-10-2023 20:27:10.594 INFO] - Input email success
+[05-10-2023 20:27:10.815 INFO] - Input password success
+[05-10-2023 20:27:10.975 INFO] - Login success
+[05-10-2023 20:27:10.978 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
+[05-10-2023 20:27:16.415 INFO] - Open correct page
+[05-10-2023 20:27:16.902 INFO] - Input email success
+[05-10-2023 20:27:17.134 INFO] - Input password success
+[05-10-2023 20:27:17.664 INFO] - Login success
+[05-10-2023 20:27:17.665 INFO] - ---------- Login_01_loginSuccessfully Success test ----------
